@@ -470,9 +470,13 @@ export class Frontend {
     } else if (code instanceof source.code.Update) {
       res = new codeImpl.Update(
         new frontend.code.Update(prefixed, code.field, code.value));
-
+    
+    } else if (code instanceof source.code.Unpack) {
+      res = new codeImpl.Unpack(
+          new frontend.code.Unpack(prefixed, code.field, code.bigEndian));
+    }
     // External callbacks
-    } else if (code instanceof source.code.Span) {
+    else if (code instanceof source.code.Span) {
       res = new codeImpl.Span(new frontend.code.Span(code.name));
     } else if (code instanceof source.code.Match) {
       res = new codeImpl.Match(new frontend.code.Match(code.name));

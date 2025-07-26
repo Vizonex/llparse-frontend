@@ -37,6 +37,7 @@ export class Container {
       Store: this.combine((impl) => impl.code.Store),
       Test: this.combine((impl) => impl.code.Test),
       Update: this.combine((impl) => impl.code.Update),
+      Unpack: this.combine((impl) => impl.code.Unpack),
       Value: this.combine((impl) => impl.code.Value),
     };
   }

@@ -11,6 +11,7 @@ export interface ICodeImplementation {
   readonly Span: new(c: code.Span) => IWrap<code.Span>;
   readonly Store: new(c: code.Store) => IWrap<code.Store>;
   readonly Test: new(c: code.Test) => IWrap<code.Test>;
+  readonly Unpack: new(c: code.Unpack) => IWrap<code.Unpack>;
   readonly Update: new(c: code.Update) => IWrap<code.Update>;
   readonly Value: new(c: code.Value) => IWrap<code.Value>;
 }

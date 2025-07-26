@@ -12,4 +12,5 @@ export * from './span';
 export * from './store';
 export * from './test';
 export * from './update';
+export * from './unpack';
 export * from './value';
